@@ -8,7 +8,8 @@ body{
     background-color:red;
     position:relative;
     top:50px;
-    animation:movedown 2s linear 0s infinite alternate;
+    animation: movedown 2s linear 0s infinite alternate, rotatee 10s linear 0s infinite alternate;
+
     /* animation: blocks 2s ease-in 0s infinite alternate; */
 }
 #Bigbox{
@@ -26,26 +27,22 @@ body{
         width 1s ease-in 0s;    
         
 }
-@keyframes moveleft{
-    from{}
-    to{
-        position:fixed;
-        left:0px;
-    }
-}
+
 @keyframes movedown{
     from{}
     to{
         position:relative;
-        top:900px;
+        top:700px;
     }
 }
-@keyframes moveright{
-    from{}
-    to{
-        position:fixed;
-        right:0px;
-    }
+@keyframes rotatee {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
+
 
 
