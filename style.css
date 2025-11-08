@@ -1,0 +1,51 @@
+body{
+    background-color:pink;
+}
+.box{
+    display:inline-block;
+    height:100px;
+    width:100px;
+    background-color:red;
+    position:relative;
+    top:50px;
+    animation:movedown 2s linear 0s infinite alternate;
+    /* animation: blocks 2s ease-in 0s infinite alternate; */
+}
+#Bigbox{
+    display:flex;
+    justify-content:space-evenly;
+    height:12000px;
+}
+.box:hover {
+    background-color: pink;
+    height: 200px;
+    width: 200px;
+    transition: 
+        background-color 1s ease-in 0s,
+        height 1s ease-in 0s,
+        width 1s ease-in 0s;    
+        
+}
+@keyframes moveleft{
+    from{}
+    to{
+        position:fixed;
+        left:0px;
+    }
+}
+@keyframes movedown{
+    from{}
+    to{
+        position:relative;
+        top:900px;
+    }
+}
+@keyframes moveright{
+    from{}
+    to{
+        position:fixed;
+        right:0px;
+    }
+}
+
+
